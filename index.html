@@ -14,12 +14,13 @@
         <h1 class="section-title">射击游戏</h1>
         <p class="game-desc">这是一个令人欲罢不能的射击游戏，使用 ← 和 → 操作你的飞机，使用空格（space）进行射击。一起来消灭宇宙怪兽吧！</p>
         <p class="game-level">当前Level: 1</p>
-        <button class="js-play button">开始游戏</button>
+        <button class="js-play button ">开始游戏</button>
       </section>
       <section class="game-failed game-ui">
         <h1 class="section-title">游戏结束</h1>
         <p class="game-info-text">最终得分: <span class="score"></span></p>
         <button class="js-replay button">重新开始</button>
+        <button class="back button">退出</button>
       </section>
       <section class="game-success game-ui">
         <h1 class="section-title">游戏成功</h1>
@@ -32,12 +33,23 @@
         <button class="js-replay button">再玩一次</button>
       </section>
     </div>
+    <div class="game-info game-ui">
+      <span class="title">分数:</span>
+      <span class="score"></span>
+    </div>
     <canvas id="canvas" width="700" height="600">
         <!-- 动画画板 -->
     </canvas>
   </div>
   <!-- 主逻辑函数 -->
-  <script src="./js/app.js" ></script>
 </body>
+<script language="JavaScript" src="./js/util.js"></script>
+<script language="JavaScript" src="./js/element.js"></script>
+<script language="JavaScript" src="./js/config.js"></script>
+<script language="JavaScript" src="./js/Enemy.js"></script>
+<script language="JavaScript" src="./js/bullet.js"></script>
+<script language="JavaScript" src="./js/plane.js"></script>
+<script language="JavaScript" src="./js/keyboard.js"></script>
+<script language="JavaScript" src="./js/app.js"></script>
 </html>
 
