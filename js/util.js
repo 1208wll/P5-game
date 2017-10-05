@@ -1,6 +1,4 @@
-//requestAnimationFrame告诉浏览器希望执行动画，
-// 并希望浏览器调用指定的的函数一次重绘之前更新动画
-//util工具对象
+
 window.requestAnimFrame =
     window.requestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
@@ -11,8 +9,7 @@ window.requestAnimFrame =
     window.setTimeout(callback,1000/30);
     };
 
-/*获取目标对象实例中最小横坐标和最大横坐标
-* */
+//获取目标对象实例中最小横坐标和最大横坐标
  function getHorizontalBoundary (arrs) {
      var minX, maxX;
      arrs.forEach(function (item) {
@@ -50,6 +47,7 @@ function resourceOnload(resources,callback) {
         }
     }
 };
+
 var util = {
     getHorizontalBoundary: getHorizontalBoundary,
     resourceOnload: resourceOnload

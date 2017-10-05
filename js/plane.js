@@ -11,8 +11,10 @@ var Plane = function(opts){
     //控制射击频率
     this.lastShoot = Date.now();
 }
+
 //继承Element的方法
 Plane.prototype = new Element();
+
 //判断是否击中
 Plane.prototype.hasHit = function (target) {
     var bullets = this.bullets;
@@ -27,6 +29,7 @@ Plane.prototype.hasHit = function (target) {
     }
     return hasHit;
 }
+
 //左右移动飞机
 Plane.prototype.translate = function (direction) {
     var speed = this.speed;
@@ -38,6 +41,7 @@ Plane.prototype.translate = function (direction) {
     }
     return this;
 };
+
 //shoot(发射子弹)
 Plane.prototype.shoot = function () {
     //200ms可以射击一次
@@ -55,6 +59,7 @@ Plane.prototype.shoot = function () {
         return this;
     }
 }
+
 //画子弹
 Plane.prototype.drawBullets = function () {
     var bullets = this.bullets;
@@ -72,6 +77,7 @@ Plane.prototype.drawBullets = function () {
         }
     }
 }
+
 //draw方法
 Plane.prototype.draw = function () {
     //绘制飞机

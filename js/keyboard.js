@@ -6,6 +6,7 @@ var keyBoard = function () {
     document.onkeydown = this.keydown.bind(this);
     document.onkeyup = this.keyup.bind(this);
 }
+
 keyBoard.prototype = {
     pressedLeft:false,//是否点击了左边
     pressedRight:false,//是否点击了右边
@@ -35,6 +36,7 @@ keyBoard.prototype = {
                 break;
         }
     },
+
     keyup:function (event) {
         var key = event.keyCode;
         switch (key){
